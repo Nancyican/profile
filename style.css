@@ -1,0 +1,110 @@
+body {
+  color: rgb(130, 120, 120);
+  background: rgb(255,250,250);
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 300px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: rgb(139,69,19);
+  font-size: 25px;
+}
+
+h2, h3 {
+  color: rgb(0,0,0)
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(139,69,19);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  width: 900px;
+  margin: 10px auto;
+  padding: 22px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+  border: 2px solid rgba(139, 69, 19, 0.9);
+}
+
+.image {
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px rgba(253, 245, 230, 0.7);
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  width: 800px
+}
+
+img {
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(1, 0, 0, 0.1);
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+    background: red;
+  }
+  .card {
+    width: 600px;
+  }
+  .image {
+    width:500px;
+  }
+}
+@media (max-width: 700px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 600px;
+    background: green;
+  }
+  .card {
+    width: 500px;
+  }
+  .image {
+    width:400px;
+  }
+}
+@media (max-width: 600px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 400px;
+    background: yellow;
+  }
+  .card {
+    width: 350px;
+  }
+  .image {
+    width:300px;
+  }
+}
+
+
